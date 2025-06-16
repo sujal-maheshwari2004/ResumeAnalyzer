@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #1e1e1e;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #80cbc4;
+}
+
+p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+/* Shared form element styling */
+textarea,
+.upload-box,
+button,
+.output {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Textarea for JD input */
+textarea {
+  height: 100px;
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+  font-size: 0.9rem;
+}
+
+/* Upload drag-drop box */
+.upload-box {
+  background-color: #2b2b2b;
+  border: 2px dashed #03dac6;
+  border-radius: 8px;
+  padding: 1.25rem;
+  min-height: 70px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  color: #aaa;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-box:hover {
+  background-color: #333;
+}
+
+/* Hidden file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Analyze button */
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #03dac6;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #00bfa5;
+}
+
+.output {
+  margin-top: 1.5rem;
+  text-align: center;
+  background-color: #2b2b2b;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  overflow-x: auto;
+}
+
