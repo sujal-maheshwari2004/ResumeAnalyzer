@@ -1,15 +1,15 @@
+const BACKEND_URL = import.meta.env.VITE_BACKEND_ENDPOINT;
+
 async function upload() {
   const fileInput = document.getElementById('resume');
   const jdInput = document.getElementById('jd');
   const outputDiv = document.getElementById('output');
 
-  // Validate resume file
   if (!fileInput.files.length) {
     outputDiv.innerHTML = `<span style="color: #f44336;">Please upload a resume file.</span>`;
     return;
   }
 
-  // Validate JD
   if (!jdInput.value.trim()) {
     outputDiv.innerHTML = `<span style="color: #f44336;">Please enter the job description.</span>`;
     return;
@@ -23,7 +23,7 @@ async function upload() {
   formData.append("jd", jd);
 
   try {
-    const response = await fetch("http://localhost:8000/analyze", {
+    const response = await fetch(`${BACKEND_URL}/analyze`, {
       method: "POST",
       body: formData
     });
