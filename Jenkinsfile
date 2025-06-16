@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t resume-analyzer-backend ./backend'
+                sh 'docker build -t resume-backend ./backend'
+                sh 'docker build -t resume-frontend ./frontend'
             }
         }
 
