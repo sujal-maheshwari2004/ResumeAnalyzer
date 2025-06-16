@@ -1,4 +1,4 @@
-const BACKEND_URL = import.meta.env.VITE_BACKEND_ENDPOINT;
+const BACKEND_URL = "https://resumeanalyzer-w1hk.onrender.com";
 
 async function upload() {
   const fileInput = document.getElementById('resume');
